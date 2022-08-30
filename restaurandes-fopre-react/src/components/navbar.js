@@ -5,7 +5,7 @@ function NavBar(){
       return <div>
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
       <LogoRestaurandes style={{maxHeight:40, maxWidth:60}}></LogoRestaurandes>
       Fopre Café
     </a>
@@ -16,13 +16,13 @@ function NavBar(){
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Restaurantes</a>
+          <a className="nav-link active" aria-current="page" href="/">Restaurantes</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">¿Qué es Fopre Café?</a>
+          <a className="nav-link" href="/queesfoprecafe">¿Qué es Fopre Café?</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">¿Qué es Fopre?</a>
+          <a className="nav-link" href="/queesfopre">¿Qué es Fopre?</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
