@@ -1,18 +1,23 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { matchPath } from "react-router-dom";
 
-function Restaurante() {
+function Restaurante(props) {
+  const nombre = props.nombre;
+  const descripcion = props.descripcion;
+  const id = props.key;
+  const imagen = props.imagen;
   return (
     <div>
     <Col>
-          <Card text="white" bg="secondary" border="light" style={{marginTop:20, marginRight:40, marginLeft:40, marginBottom:20}}>
-              <Card.Header><h1>Crepes & Waffles</h1></Card.Header>
+          <Card text="white" bg="dark" border="dark" style={{marginTop:20, marginRight:40, marginLeft:40, marginBottom:20}}>
+              <Card.Header><h1>{nombre}</h1></Card.Header>
             <Card.Body>
-            <Card.Img variant="top" src="https://www.mambogota.com/wp-content/uploads/2018/05/logo-Crepes-Waffles-01.png" />
-              <Card.Title>La vieja confiable</Card.Title>
+            <Card.Img variant="top" alt={"logo-"+nombre} class="img-fluid rounded mx-auto d-block" src={imagen} style={{maxHeight:80}}></Card.Img>
+              <Card.Title></Card.Title>
               <Card.Text>
-              Crepes & Waffles es una cadena de restaurantes colombiana creada en 1980 en la ciudad de Bogotá por dos estudiantes del Colegio de Estudios Superiores de Administración.​
+              {descripcion}
               </Card.Text>
             </Card.Body>
           </Card>
