@@ -1,12 +1,12 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import { matchPath } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 function Restaurante(props) {
   const nombre = props.nombre;
   const descripcion = props.descripcion;
-  const id = props.key;
+  const id = props.id;
   const imagen = props.imagen;
   return (
     <div>
@@ -20,6 +20,7 @@ function Restaurante(props) {
               {descripcion}
               </Card.Text>
             </Card.Body>
+            <Button href={"/restaurante/"+id} variant="secondary" size="sm">Ver menú</Button>
           </Card>
 
         </Col>

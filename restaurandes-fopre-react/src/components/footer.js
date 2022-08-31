@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as LogoRestaurandes } from './assets/logo_restaurandes.svg';
 
 function Footer(){
       return <div>

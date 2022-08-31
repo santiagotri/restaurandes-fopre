@@ -10,7 +10,9 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 import Restaurantes from "./components/restaurantes";
 import QueEsFopre from "./components/queEsFopre";
-import QueEsFopreCafe from "./components/queEsFopreCafe";
+import QueEsFopreCafe from "./components/queEsFopreCafe"
+import restaurantes from "./components/assets/restaurantes.json";
+import Menu from "./components/menu";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         <Route path="/" element={<Restaurantes />} />
         <Route path="queesfopre" element={<QueEsFopre />} />
         <Route path="queesfoprecafe" element={<QueEsFopreCafe />} />
+        {restaurantes.restaurantes.map((item) => (
+                    <Route key={"ruta"+item.id} path={"restaurante/"+item.id} element={<Menu nombre={item.nombre} id={item.id} key={"menu"+item.id}></Menu>} />
+                  ))}
       </Routes>
       <Footer></Footer>
     </div>
