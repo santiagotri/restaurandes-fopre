@@ -33,6 +33,11 @@ function NavBar() {
                 </a>
               </li>
               <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="/mediosdepago">
+                  Medios de pago
+                </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/queesfoprecafe">
                   ¿Qué es Fopre Café?
                 </a>
@@ -52,14 +57,23 @@ function NavBar() {
                 >
                   Menú
                 </a>
+
                 <ul className="dropdown-menu">
-                  {restaurantes.restaurantes.map((item) => (
+                  {restaurantes.restaurantes.map((item) => {
+                    if(item.menu.length!==0) return (
                     <li key={"lista"+item.id}>
-                      <a key={"boton"+item.id} className="dropdown-item" href={"/restaurante/"+item.id}>
-                        {item.nombre}
-                      </a>
-                    </li>
-                  ))}
+                    <a key={"boton"+item.id} className="dropdown-item" href={"/restaurante/"+item.id}>
+                      {item.nombre}
+                    </a>
+                  </li>)
+                  else{
+                    return <div key={"lista"+item.id}></div>
+                  }
+                  } 
+                  )}
+                  <li>
+                      <p className="text-center text-muted">Estamos trabajando a lo largo de la semana FOPRE para tener más menús 👷🏻‍♂️🔨</p>
+                  </li>
                 </ul>
               </li>
             </ul>
