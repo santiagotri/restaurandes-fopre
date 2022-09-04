@@ -27,13 +27,9 @@ function Restaurante(props) {
             <h1>{nombre}</h1>
           </Card.Header>
           <Card.Body>
-            <Card.Img
-              variant="top"
-              alt={"logo-" + nombre}
-              className="img-fluid rounded mx-auto d-block"
-              src={imagen}
-              style={{ maxWidth: 150 }}
-            ></Card.Img>
+            {
+              insertarImagen()
+            }
             <Card.Title></Card.Title>
             <Card.Text>{descripcion}</Card.Text>
 
@@ -52,6 +48,21 @@ function Restaurante(props) {
         Ver menú
       </Button>
       )
+    }
+  }
+  function insertarImagen(){
+    if(imagen!==""){
+      return(
+        <Card.Img
+              variant="top"
+              alt={"logo-" + nombre}
+              className="img-fluid rounded mx-auto d-block"
+              src={imagen}
+              style={{ maxWidth: 150 }}
+            ></Card.Img>
+      )
+    }else{
+      return <div></div>
     }
   }
 }
