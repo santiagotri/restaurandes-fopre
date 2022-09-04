@@ -7,6 +7,7 @@ function MediosDePago(props) {
     "https://coink.com/referidos.html?referencedBy=b53be174-c452-4862-96eb-78ca79b2975f";
   return (
     <div>
+      {contarPaginaVisitada()}
       <Card
         text="white"
         bg="dark"
@@ -23,9 +24,7 @@ function MediosDePago(props) {
         </Card.Header>
         <Card.Body>
           <Card.Img
-            onClick={() => {
-              window.location.href = urlcoink;
-            }}
+            onClick={descargarCoink}
             variant="top"
             alt="logo-coink"
             class="img-fluid rounded mx-auto d-block"
@@ -49,7 +48,7 @@ function MediosDePago(props) {
             <br></br>
             <br></br>
             <Button
-              href={urlcoink}
+              onClick={descargarCoink}
               className="mx-auto d-block"
               variant="success"
               size="lg"
@@ -93,6 +92,16 @@ function MediosDePago(props) {
       </Card>
     </div>
   );
+  function contarPaginaVisitada(){
+    const url="https://api.countapi.xyz/hit/restaurandes/fcbf8e2f-b030-405a-aac0-86417e272195";
+    fetch(url);
+  }
+  function descargarCoink(){
+    const url="https://api.countapi.xyz/hit/restaurandes/41845167-a435-4d1b-880c-05f569034e99";
+    fetch(url).then(()=>{
+      window.location.href = urlcoink;
+    });
+  }
 }
 
 export default MediosDePago;
