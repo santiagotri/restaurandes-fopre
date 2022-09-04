@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 function QueEsFopreCafe() {
   return (
     <div>
-      <script async src="https://api.countapi.xyz/hit/restaurandes/84492a00-81af-4664-9aee-3ef52a03dcac"></script>
+      {contarPaginaVisitada()}
       <Card
         text="white"
         bg="dark"
@@ -70,6 +70,10 @@ function QueEsFopreCafe() {
       </Card>
     </div>
   );
+  function contarPaginaVisitada(){
+    const url="https://api.countapi.xyz/hit/restaurandes/84492a00-81af-4664-9aee-3ef52a03dcac";
+    fetch(url);
+  }
 }
 
 export default QueEsFopreCafe;
