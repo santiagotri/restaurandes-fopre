@@ -47,6 +47,11 @@ function NavBar() {
                   ¿Qué es Fopre?
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/mapa">
+                  Mapa
+                </a>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"

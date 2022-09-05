@@ -8,6 +8,7 @@ import QueEsFopreCafe from "./components/queEsFopreCafe";
 import restaurantes from "./components/assets/restaurantes.json";
 import Menu from "./components/menu";
 import MediosDePago from "./components/mediosdepago";
+import Mapa from "./components/mapa";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="queesfopre" element={<QueEsFopre />} />
         <Route path="queesfoprecafe" element={<QueEsFopreCafe />} />
         <Route path="mediosdepago" element={<MediosDePago />} />
+        <Route path="mapa" element={<Mapa />} />
         {restaurantes.restaurantes.map((item) => (
           <Route
             key={"ruta" + item.id}
