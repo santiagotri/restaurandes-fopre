@@ -12,7 +12,7 @@
       "nombre": "Kaldiva",
       "descripcion": "Somos especialistas en servir café especial de origen colombiano, recién tostado y molido en nuestra tienda. Conoce nuestro variado menú.",
       "imagen": "https://kaldiviacafe.com/wp-content/uploads/2014/12/logo-kaldivia.png",
-      "menu": []
+      "menu": ["https://live.staticflickr.com/65535/52335098489_e1b1476e84_o.jpg"]
     },
     {
       "id": 3,
@@ -39,7 +39,7 @@
       "id": 6,
       "nombre": "Churros Express",
       "descripcion": "Lugar especializado en Churros",
-      "imagen": "",
+      "imagen": "https://live.staticflickr.com/65535/52333846322_6cee29e16a_o.jpg",
       "menu": ["https://live.staticflickr.com/65535/52335213155_33e6d418d1_o.jpg"]
     },
     {
@@ -68,7 +68,7 @@
       "nombre": "Home Burgers",
       "descripcion": "Hamburguesa clásica con ingredientes de calidad. ",
       "imagen": "https://homeburgers.com/static/img/social-shared.jpg",
-      "menu": []
+      "menu": ["https://live.staticflickr.com/65535/52334799491_6932bea786_o.jpg"]
     },
     {
       "id": 11,
@@ -89,7 +89,7 @@
       "nombre": "Lechoneria el Gordo",
       "descripcion": "Lechona deshuesada y baja en grasa",
       "imagen": "https://lechonaelgordo.com/wp-content/uploads/2021/08/cropped-logo-1.png",
-      "menu": []
+      "menu": ["https://live.staticflickr.com/65535/52334799716_aa0488a230_o.jpg"]
     },
     {
       "id": 14,
@@ -109,7 +109,7 @@
       "id": 17,
       "nombre": "I love Papas",
       "descripcion": "I Love Papas Fries. Fast food restaurant. Alitas , Salchipapas , Broaster , Burgers y tus favoritas papas huayro crocantes",
-      "imagen": "https://scontent.fbog4-1.fna.fbcdn.net/v/t1.6435-9/81949248_107536984116296_4281525216594624512_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=nP4q0NIOPUQAX9rmvRp&_nc_ht=scontent.fbog4-1.fna&oh=00_AT-8ZIlbcP6vpEA8M0pCdmKHXAB5xISon1gbDaPci4W30Q&oe=63390D70",
+      "imagen": "https://live.staticflickr.com/65535/52335233045_3c2def5a5e_o.jpg",
       "menu": ["https://live.staticflickr.com/65535/52335214485_1fee82db73_o.jpg"]
     },
     {
